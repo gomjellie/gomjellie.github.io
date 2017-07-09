@@ -1,0 +1,4 @@
+User-agent: *
+Alow: /
+
+Sitemap: https://gomjellie.github.io/sitemap.xml
