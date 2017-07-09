@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I am freelance developer. Currently doing more in backend, focused in Python and Django.
+잉여 입니다.
 
-email: agus[at]python.web.id
+email: gomjellie@gmail.com
