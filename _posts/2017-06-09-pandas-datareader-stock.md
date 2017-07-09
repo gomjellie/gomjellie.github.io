@@ -237,7 +237,9 @@ def reload_empty(market):
         if file.empty:
             print("empty file {} is updated".format(file_name))
             ticker = six_digit.findall(file_name)[0]
-            tmp_df = data.get_data_yahoo(ticker+'.KQ', start='1996-05-06', thread=20)
+            _ticker = ticker + ['.KQ', '.KS']['market'=='kospi']
+            tmp_df = data.get_data_yahoo(_ticker, start='1996-05-06', thread=20)
+            
             tmp_df.to_csv(file_name)
 
 reload_empty('kosdaq')
