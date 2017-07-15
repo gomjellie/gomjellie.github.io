@@ -6,6 +6,7 @@ categories: [파이썬, 피클]
 ---
 
 `피클 모듈`을 사용하면, `파이썬의 객체`를 `파일`로 저장했다가 불러올 수 있다.
+저장 가능한 객체는 `primitive`타입에 한정되지 않는다.
 
 {% highlight python %}
 import pickle

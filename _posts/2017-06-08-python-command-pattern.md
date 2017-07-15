@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "파이썬 커맨드 패턴"
+title:  "파이썬 명령 분배 패턴"
 date:   2017-06-08 15:32:34 +0700
 categories: [파이썬, 디자인 패턴]
 ---
 
 ### `명령 분배 패턴(Command Dispatch Pattern)`
+
+일반적으로 사용하는 (undo가 있는)커맨드 패턴과는 다르다.
 
 GoF는 명령 패턴을 요청이 객체로 캡슐화되어 있을 경우라고 기술한다. 
 
@@ -55,9 +57,6 @@ class Dispatcher:
         pass
     
     def do_eat(self):
-        pass
-    
-    def dispatch(self, command):
         pass
     
     def dispatch(self, command):
