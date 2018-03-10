@@ -7,14 +7,27 @@ categories: [파이썬, pandas, 주식]
 
 ***
 
+
 # 수작업으로 다운받기
 
+
+하나의 주식 종목데이터만 필요한 경우라면 그냥 브라우저로 야후 파이낸스 웹 사이트에서 다운 받을 수 있다.
+
+
+예를들어 아프리카TV의 데이터를 얻고 싶다면,
+
+
 [[야후 파이낸스]아프키라TV의 historical data](https://finance.yahoo.com/quote/067160.KQ/history?p=067160.KQ)
+
+
 에서 Time Period를 설정하고 다운로드 버튼을 눌러 직접 다운받을 수 있다.
+
 
 그러나 하나만 다운받을 것이아니라 대량으로 다운받기 위해서는 자동화 작업이 필요하다.
 
+
 파이썬 pandas-datareader를 이용해서 자동화 시켜보자.
+
 
 ***
 
@@ -108,16 +121,16 @@ kosdaq 1230개, kospi 768개의 종목코드가 담겨있는 [피클](https://go
 
 추가로 작성하는 파이썬 코드:
 {% highlight python %}
-import pickle
+import pandas as pd
 
-kosdaq = pickle.load(open('./kosdaq.pickle')) 
-kospi = pickle.load(open('./kospi.pickle')) 
+kosdaq = pd.read_pickle('./kosdaq.pickle')
+kospi = pd.read_pickle('./kospi.pickle')
 {% endhighlight %}
 
 ### 가져온 피클 확인하기
 
 피클파일에는 `DataFrame`형의 자료가 들어있었다.
-따라서 `pickle.load()` 를 이용해서 가져온 데이터도 `DataFrame`형의 자료일 것이다.
+따라서 `pd.read_pickle` 를 이용해서 가져온 데이터도 `DataFrame`형의 자료일 것이다.
 
 kosdaq.head()로 안의 데이터를 확인하자.
 
@@ -205,10 +218,12 @@ from pandas_datareader import data
 import fix_yahoo_finance as yf
 yf.pdr_override()
 import pickle
+import pandas as pd
 import re
+import glob
 
-kosdaq = pickle.load(open('./kosdaq.pickle')) 
-kospi = pickle.load(open('./kospi.pickle')) 
+kosdaq = pd.read_pickle('./kosdaq.pickle')
+kospi = pd.read_pickle('./kospi.pickle')
 
 def save_kosdaq():
     for stock in kosdaq.values:
@@ -239,7 +254,6 @@ def reload_empty(market):
             ticker = six_digit.findall(file_name)[0]
             _ticker = ticker + ['.KQ', '.KS']['market'=='kospi']
             tmp_df = data.get_data_yahoo(_ticker, start='1996-05-06', thread=20)
-            
             tmp_df.to_csv(file_name)
 
 reload_empty('kosdaq')
