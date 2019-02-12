@@ -15,7 +15,7 @@ categories: [웹]
 
 터커소프트회사 사이트가 실제로 있었다.
 
-![Image Alt 밴더스내치-홈페이지](/static/img/_posts/black-mirror/tuckersoft-history.png)
+![Image Alt 밴더스내치-홈페이지](/static/img/posts/black-mirror/tuckersoft-history.png)
 
 친구랑 이것저것 얘기하다가 알게된 사실은 친구랑 나랑 뜨는 웹페이지 모습이 다르다는 것이였다.
 
