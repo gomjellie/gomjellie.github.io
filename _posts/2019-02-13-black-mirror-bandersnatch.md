@@ -25,7 +25,7 @@ categories: [웹]
 
 쿠키를 까서보니 쿠키에 어떤 버전을 띄울지 정보가 저장되어 있었다.
 
-쿠키가 뭔지 모르는 사람은 [꺼무위키](https://namu.wiki/)를 참고하길 바란다.
+쿠키가 뭔지 모르는 사람은 [꺼무위키](https://namu.wiki/w/%EC%BF%A0%ED%82%A4#s-4)를 참고하길 바란다.
 
 ![Image](/static/img/posts/black-mirror/cookie-1.png)
 
@@ -35,7 +35,7 @@ _ga, _gid 는 구글 애널리스틱스와 관련된 값을 담고있는 항목�
 
 테스트 해본결과 tl 값은 0, 1, 2 를 갖을 수 있다.
 
-현재 1인 tl의 값을 0으로 대입해서 바꿔보도록 하겠다.
+현재 1인 tl의 값을 2으로 대입해서 바꿔보도록 하겠다.
 
 ![Image Alt 2대입](/static/img/posts/black-mirror/assign-tl-2.png)
 
