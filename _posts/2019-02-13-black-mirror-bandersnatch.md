@@ -27,7 +27,7 @@ categories: [웹]
 
 쿠키가 뭔지 모르는 사람은 [꺼무위키](https://namu.wiki/)를 참고하길 바란다.
 
-![Image](/static/img/_posts/black-mirror/cookie-1.png)
+![Image](/static/img/posts/black-mirror/cookie-1.png)
 
 _ga, _gid 는 구글 애널리스틱스와 관련된 값을 담고있는 항목이고
 
@@ -37,21 +37,21 @@ _ga, _gid 는 구글 애널리스틱스와 관련된 값을 담고있는 항목�
 
 현재 1인 tl의 값을 0으로 대입해서 바꿔보도록 하겠다.
 
-![Image Alt 2대입](/static/img/_posts/black-mirror/assign-tl-2.png)
+![Image Alt 2대입](/static/img/posts/black-mirror/assign-tl-2.png)
 
 직접 해보고 싶다면 페이지 우클릭후 개발자 도구를 열고 console에서 위의 라인을 따라치면 된다. (_ga, _gid는 본인의 값으로 복붙해서 써야한다)
 
 tl=2 가 되었다면 이제 페이지 새로고침을 해서 변화된 페이지를 확인해보자!
 
-![Image Alt 2일때](/static/img/_posts/black-mirror/when-tl-2.png)
+![Image Alt 2일때](/static/img/posts/black-mirror/when-tl-2.png)
 
 tl = 2 일때는 밴더스내치가 캔슬되고, 노즈다이브는 출시된 모습이다.
 
-![Image Alt 0일때](/static/img/_posts/black-mirror/when-tl-0.png)
+![Image Alt 0일때](/static/img/posts/black-mirror/when-tl-0.png)
 
 tl = 0 일때는 밴더스태치가 출시되고, 노즈다이브는 출시되지 않았다.
 
-![Image Alt 1일때](/static/img/_posts/black-mirror/tuckersoft-history.png)
+![Image Alt 1일때](/static/img/posts/black-mirror/tuckersoft-history.png)
 
 tl = 1 일때 밴더스내치와 노즈다이브가 둘다 출시되었다.
 
