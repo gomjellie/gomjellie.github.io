@@ -17,8 +17,8 @@ session = defaultdict()
 def check_session(user_key):
     if user_key in session:
         return True
-    else:
-        return False
+    
+    return False
 
 def yes_session():
     print('hello')
@@ -38,8 +38,8 @@ session = defaultdict()
 def check_session(user_key):
     if user_key in session:
         return True
-    else:
-        return False
+    
+    return False
 
 def session_deco(func):
     def wrapper(*args, **kwargs):
