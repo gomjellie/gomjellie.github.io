@@ -1,14 +1,14 @@
 title: Posts
 description: My Personal Stack Problems
-author: Oh InQueue
+author: Oh EnQueue
 github: https://github.com/gomjellie
-about: 머신러닝과 통계에 관심이 많은 학생.
+about: 아주 가끔 블로그 포스팅 합니다. 정해진 주제는 딱히 없습니다.
 disqus_shortname: gomjellie
 google_analytics: UA-102235776-1
 avatar_url: /static/img/avatar.jpg
 
 enableTags: true
-tagarray: [머신러닝, 파이썬]
+tagarray: [파이썬]
 
 collections:
   project:
