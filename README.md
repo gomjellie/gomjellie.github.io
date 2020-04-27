@@ -6,6 +6,13 @@ bundle install
 Start Jekyll server: 
 
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 
+you might need followings:
+
+```sh
+bundle update --bundler
+
+bundle exec jekyll serve --verbose --watch 2>/dev/null
+```
